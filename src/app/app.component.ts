@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'seedapp';
+  show_list : boolean = true;
+  update_data:any;
+
+  toggleComponent(e){
+    this.show_list = false;
+    console.log(e)
+    this.update_data = e;
+  }
 }

@@ -1,0 +1,24 @@
+<h3 style="text-align: center;">ADD / UPDATE </h3>
+<div class="update_screen">
+    <div class="rows">
+        <div class="label">Customer Segment</div>
+        <div class="val">
+            {{segment}}
+        </div>
+    </div>
+    <div class="rows">
+        <div class="label">Sub Segments</div>
+        <div class="val_multiple">
+            <p *ngFor="let each of sub">{{each}}</p>
+        </div>
+    </div>
+    <div class="rows">
+        <div class="label">Consumer Categories</div>
+        <div class="val_multiple">
+            <p *ngFor="let each of categories">{{each}}</p>
+        </div>
+    </div>
+    <div class="rows_right">
+        <button mat-button (click)="onsave()" style="background:green;color:white">save</button>
+    </div>
+</div>
